@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Incluir Celulares
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body >
+<nav>
+  <ul class="menu">
+		<li><a href="Inclusao.html">Novo Item</a></li>
+        <li><a href="Inclusao.html">Listar Item</a></li>
+        
+  </ul>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+</nav>
+<table width="57%" border="3" align="center">
+  <caption>
+    
+  </caption>
+  <tr>
+  <th colspan="2">Cadastrar Itens</tr>
+  <tr>
+        <td width="160"><label>Modelo</label><label class="validation-error hide" id="modeloValidationError">Modelo Requerido.</label></td>
+    <td width="279"><input type="text" name="modelo" id="modelo"></td>
+  </tr>
+  <tr>
+     <td width="160"><label>Marca</label><label class="validation-error hide" id="modeloValidationError">Marca Requerida.</label></td>
+    <td width="279"><input type="text" name="marca" id="marca"></td>
+  </tr>
+  <tr>
+  <td><label>Tipo</label></td>
+  <td>
+  <select type="text" name="tipo" id="tipo">
+	 <option></option> 
+	 <option>Dobrável</option>
+	 <option>Não Dobrável</option>
+  </select>
+  
+  </tr>
+  <tr>
+     <td><label>Quantidade</label></td>
+     <td>
+     <select type="numeric" name="quantidade" id="quantidade">
+    	<option value="" >Selecione a Quantidade</option>
+        <option value="1" >1</option>
+        <option value="2" >2</option>
+        <option value="3" >3</option>
+	</select>
+     </td>
+  </tr>
+  <tr>
+    <td>Condição</td>
+    <td><form id="condicao">
+<INPUT TYPE="RADIO" NAME="OPCAO1" VALUE="op1"> Novo
+<INPUT TYPE="RADIO" NAME="OPCAO2" VALUE="op2"> Usado
+</form></td>
+  </tr>
+    <tr>
+    <td>Diferenciais</td>
+    <td><form id="diferenciais">
+<INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op1"> FULL HD
+<INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op2"> 5G
+<INPUT TYPE="checkbox" NAME="OPCAO" VALUE="op3"> DUAL CHIP
+</form></td>
+  </tr>
+</table>
+  <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();"  autocomplete="off">
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Cadastrar" align="left" >
+                    </div>
+                </form>
+            </td>
+            
+        </tr>
+        <table width="200" border="1">
+</table>
+
+    </table>
+    <script src="script.js"></script>
+    <table class="list" id="celulares">
+      <thead>
+        <tr>
+          <th>Modelo</th>
+          <th>Marca</th>
+          <th>Tipo</th>
+          <th>Quantidade</th>
+          <th>Condição</th>
+          <th>Diferenciais</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+</body>
+
+</html>
